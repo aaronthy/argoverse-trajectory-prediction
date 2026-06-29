@@ -24,9 +24,9 @@ def load_model():
 # Load data
 @st.cache_data
 def load_data():
-    obs = np.load('/mnt/d/argoverse_data/val_obs.npy')
-    future = np.load('/mnt/d/argoverse_data/val_future.npy')
-    others = np.load('/mnt/d/argoverse_data/val_others.npy')
+    obs = np.load('sample_obs.npy')
+    future = np.load('sample_future.npy')
+    others = np.load('sample_others.npy')
     return obs, future, others
 
 model, device = load_model()
@@ -36,7 +36,7 @@ edge_index = torch.tensor([[0,1,2,3,4,5,6,7,8,9,10],
                             [1,2,3,4,5,6,7,8,9,10,0]], dtype=torch.long).to(device)
 
 # Sequence selector
-idx = st.slider("Select sequence", 0, len(obs)-1, 0)
+idx = st.slider("Select sequence", 0, 99, 0)
 
 # Predict
 batch_obs = torch.FloatTensor(obs[idx:idx+1]).to(device)
