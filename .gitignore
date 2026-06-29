@@ -1,8 +1,7 @@
 # Ignoring data files #
 #######################
 *.pkl
-*.npy
-
+# *.npy  (commented out - we need sample files)
 # We'll ignore all of the following:
 
 dist/*
@@ -46,5 +45,4 @@ tests/test_data/mot16_scenario_*.txt
 venv/
 *.pth
 mlruns/
-prediction_seq*.png
 model_large*
