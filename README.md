@@ -20,6 +20,14 @@ Given 2 seconds of a vehicle's past trajectory and surrounding agents, predict t
 | Small (hidden=64) | 2.17 | 4.78 |
 | Large (hidden=128) | 2.08 | 4.54 |
 
+## Example Predictions
+
+### Good prediction (straight line)
+![straight](images/prediction_seq1845.png)
+
+### Curved trajectory
+![curve](images/prediction_seq12840.png)
+
 ## Project Structure
 - `preprocess_fn.py` — data preprocessing pipeline
 - `preprocess_val.py` — preprocess validation data
