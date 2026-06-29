@@ -5,6 +5,9 @@ A driving trajectory prediction system using GNN + Transformer architecture, tra
 ## Overview
 Given 2 seconds of a vehicle's past trajectory and surrounding agents, predict the next 3 seconds of movement.
 
+## Live Demo
+🚀 [Try the interactive demo here](https://argoverse-trajectory-prediction-zkr8gjpuu4jlfxxlnch9mg.streamlit.app/)
+
 ## Architecture
 - **GNN (Graph Neural Network)** — models interactions between surrounding vehicles
 - **Transformer** — captures temporal patterns to predict future trajectory
